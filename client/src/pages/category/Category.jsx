@@ -4,6 +4,7 @@ import "./category.scss";
 import axios from "axios";
 import OtherHousesOutlinedIcon from "@mui/icons-material/OtherHousesOutlined";
 import CatPageCard from "../../components/CatPageCard/CatPageCard";
+import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 
 const Category = () => {
   const [category, setCategory] = useState([]);
@@ -37,7 +38,10 @@ const Category = () => {
             <Link to="/" className="link">
               <OtherHousesOutlinedIcon />
             </Link>
-            ><p className="category">Category > {cat}</p>
+            <KeyboardArrowRightIcon />
+            <p className="category">
+              Category <KeyboardArrowRightIcon /> {cat}
+            </p>
           </div>
           <h1 className="categoryTitle">{cat}</h1>
         </div>

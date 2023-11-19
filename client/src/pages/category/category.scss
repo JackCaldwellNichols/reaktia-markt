@@ -18,6 +18,8 @@
       }
       .category {
         text-transform: capitalize;
+        display: flex;
+        align-items: center;
       }
       .categoryTitle {
         text-transform: capitalize;
