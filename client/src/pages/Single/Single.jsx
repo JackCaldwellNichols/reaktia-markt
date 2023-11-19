@@ -117,8 +117,8 @@ const Single = () => {
               modules={[EffectCoverflow, Pagination]}
               className="mySwiper"
             >
-              {product?.images.map((image) => (
-                <SwiperSlide className="slide">
+              {product?.images.map((image, index) => (
+                <SwiperSlide className="slide" key={index}>
                   <img src={image} className="image" />
                 </SwiperSlide>
               ))}

@@ -32,7 +32,6 @@ function App() {
         );
         dispatch(setLoading(false));
       } else {
-        console.log("user not logged in");
       }
     });
   }, []);

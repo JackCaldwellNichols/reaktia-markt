@@ -56,14 +56,12 @@ const Cart = () => {
     stripeToken && cart.total >= 1 && makeReq();
   }, [stripeToken, cart.total, navigate]);
 
-  console.log(orderInfo);
-
   const style = {
     position: "absolute",
     top: "50%",
     left: "50%",
     transform: "translate(-50%, -50%)",
-    width: 400,
+    width: 250,
     bgcolor: "background.paper",
     border: "none",
     boxShadow: 24,
@@ -91,8 +89,8 @@ const Cart = () => {
             </div>
           ) : (
             <div className="info">
-              {cart.products.map((product) => (
-                <div key={product._id} className="product">
+              {cart.products.map((product, index) => (
+                <div key={index} className="product">
                   <div className="productDetails">
                     <img src={product.images[0]} />
                     <div className="details">
