@@ -26,4 +26,14 @@ app.post("/api/payment", (req, res) => {
   );
 });
 
-app.listen(3000);
+const startServer = () => {
+  try {
+    app.listen(3000, () => {
+      console.log("API running");
+    });
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+startServer();
