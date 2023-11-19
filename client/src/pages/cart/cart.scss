@@ -1,0 +1,160 @@
+@import "../../global.scss";
+
+.cartPage {
+  min-height: 90vh;
+  padding: 50px 200px;
+  @include mobile {
+    padding: 20px;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .cartTitle {
+      font-weight: 300;
+      padding: 5px 0px;
+    }
+    .top {
+      .btnContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0px;
+
+        button {
+          height: 50px;
+          width: max-content;
+          padding: 10px;
+          border-radius: 10px;
+          border: none;
+          background-color: #f05941;
+          color: white;
+          text-transform: uppercase;
+          font-weight: bold;
+          cursor: pointer;
+          &:hover {
+            background-color: #be3144;
+          }
+        }
+      }
+      .topText {
+        display: flex;
+        .cartItems {
+          color: grey;
+          font-size: 14px;
+          padding: 10px 0px;
+        }
+      }
+    }
+    .bottom {
+      display: flex;
+      gap: 100px;
+      padding: 10px 0px;
+      @include mobile {
+        flex-direction: column;
+        gap: 50px;
+      }
+      .info {
+        flex: 1.5;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .product {
+          border: 1px solid grey;
+          border-radius: 10px;
+          padding: 10px;
+          .productDetails {
+            display: flex;
+            align-items: start;
+            justify-content: space-between;
+            @include mobile {
+              flex-direction: column;
+            }
+            img {
+              width: 200px;
+              object-fit: cover;
+              padding: 10px;
+              @include mobile {
+                margin: 0px auto;
+              }
+            }
+            .details {
+              padding: 10px;
+              display: flex;
+              gap: 10px;
+              flex-direction: column;
+              .priceDetails {
+                .productAmountContainer {
+                  display: flex;
+                  align-items: center;
+                  justify-content: start;
+                  gap: 20px;
+                  width: 20%;
+                  .productAmount {
+                    border: 1px solid grey;
+                    border-radius: 5px;
+                    padding: 10px;
+                    font-size: 22px;
+                  }
+                  .deleteIcon {
+                    font-size: 26px;
+                    border: 1px solid grey;
+                    border-radius: 5px;
+                    padding: 10px;
+                    cursor: pointer;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .summary {
+        flex: 1;
+        background-color: rgb(248, 248, 248);
+        border-radius: 10px;
+        padding: 10px 20px;
+        height: max-content;
+        .summaryTitle {
+          font-weight: 300;
+          font-size: 18px;
+          padding: 10px 0px;
+          border-bottom: 1px solid grey;
+          font-weight: 400;
+        }
+        .summaryItem {
+          padding: 20px 0px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          @include mobile {
+            padding: 10px 0px;
+          }
+          .summaryItemText {
+            padding: 10px 0px;
+            font-weight: 500;
+          }
+        }
+        .checkoutBtn {
+          height: 50px;
+          width: 100%;
+          padding: 10px;
+          border-radius: 10px;
+          border: none;
+          background-color: #f05941;
+          color: white;
+          text-transform: uppercase;
+          font-weight: bold;
+          cursor: pointer;
+          &:hover {
+            background-color: #be3144;
+          }
+          &:disabled {
+            cursor: not-allowed;
+          }
+        }
+      }
+    }
+  }
+}

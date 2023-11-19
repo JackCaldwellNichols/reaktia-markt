@@ -1,0 +1,78 @@
+@import "../../global.scss";
+
+.cat {
+  min-height: 90vh;
+  padding: 50px 200px;
+  @include mobile {
+    padding: 20px;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .info {
+      .breadCrumb {
+        display: flex;
+        align-items: center;
+        gap: 3px;
+      }
+      .category {
+        text-transform: capitalize;
+      }
+      .categoryTitle {
+        text-transform: capitalize;
+        padding: 10px 0px;
+        font-size: 50px;
+        font-weight: 400;
+      }
+    }
+    .body {
+      display: flex;
+      gap: 50px;
+      width: 100%;
+      padding: 20px 0px;
+      @include mobile {
+        flex-direction: column;
+      }
+      .left {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+
+        .brands {
+          font-size: 18px;
+          font-weight: bold;
+        }
+        .brandList {
+          @include mobile {
+            display: flex;
+            flex-wrap: wrap;
+          }
+          .brandName {
+            list-style: none;
+            padding: 10px 0px;
+            font-weight: 300;
+            text-transform: capitalize;
+            cursor: pointer;
+            &:hover {
+              font-weight: 400;
+            }
+            @include mobile {
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+      .right {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        flex: 4;
+        @include mobile {
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}

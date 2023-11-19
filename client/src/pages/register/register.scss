@@ -1,0 +1,56 @@
+@import "../../global.scss";
+
+.register {
+  min-height: 80vh;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+
+  .registerForm {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0px;
+    gap: 50px;
+    @include mobile {
+      padding: 20px;
+      align-items: center;
+    }
+    .formTitle {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      @include mobile {
+        text-align: center;
+      }
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      gap: 30px;
+      input {
+        height: 50px;
+        border-radius: 10px;
+        padding-left: 20px;
+        outline: none;
+        font-size: 16px;
+      }
+      span {
+        font-weight: bold;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      button {
+        height: 50px;
+        border-radius: 10px;
+
+        background-color: black;
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+}

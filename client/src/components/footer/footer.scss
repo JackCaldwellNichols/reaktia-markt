@@ -1,0 +1,88 @@
+@import "../../global.scss";
+
+.footer {
+  height: 400px;
+
+  background-color: #22092c;
+  display: flex;
+  color: white;
+  padding: 10px;
+  @include mobile {
+    flex-direction: column;
+    height: max-content;
+
+    align-items: start;
+    justify-content: center;
+  }
+
+  .left {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    img {
+      height: 100px;
+      width: 200px;
+      object-fit: contain;
+    }
+    .desc {
+      margin: 20px 0px;
+      @include mobile {
+        display: none;
+      }
+    }
+    .socialMedia {
+      display: flex;
+      gap: 20px;
+      .socialIcon {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+  .center {
+    flex: 1;
+    padding: 50px 20px;
+    .title {
+      margin-bottom: 30px;
+    }
+    .list {
+      margin: 0px;
+      padding: 0px;
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      .listItem {
+        width: 50%;
+        margin-bottom: 10px;
+      }
+    }
+    @include mobile {
+      padding: 20px 20px;
+    }
+  }
+  .right {
+    flex: 1;
+    padding: 50px 20px;
+    gap: 20px;
+
+    .title {
+      margin-bottom: 30px;
+      text-transform: uppercase;
+    }
+    .contactItem {
+      display: flex;
+      padding: 10px 0px;
+      align-items: center;
+      gap: 10px;
+    }
+    @include mobile {
+      padding: 20px 20px;
+    }
+  }
+}

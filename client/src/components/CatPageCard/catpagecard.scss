@@ -1,0 +1,45 @@
+.catPageCard {
+  height: 400px;
+  width: 200px;
+  border: 1px solid grey;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  color: black;
+  border-radius: 10px;
+  padding: 30px;
+  cursor: pointer;
+  .cardImg {
+    min-height: 200px;
+    width: 100%;
+    object-fit: cover;
+  }
+  .cardBody {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    height: 100%;
+    flex-direction: column;
+
+    .cardBodyTop {
+      .cardRating {
+        .star {
+          color: #be3144;
+          font-size: 18px;
+        }
+      }
+    }
+    .cardTitle {
+    }
+    .cardDesc {
+      font-size: 14px;
+    }
+    .cardPrice {
+      font-size: 18px;
+      font-weight: bold;
+      color: #be3144;
+    }
+  }
+}

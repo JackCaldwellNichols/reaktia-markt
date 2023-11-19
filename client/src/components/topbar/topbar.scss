@@ -1,0 +1,22 @@
+@import "../../global.scss";
+
+.topbar {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  background-color: #22092c;
+  .left {
+    @include mobile {
+      display: none;
+    }
+  }
+  .center {
+  }
+  .right {
+    @include mobile {
+      display: none;
+    }
+  }
+}

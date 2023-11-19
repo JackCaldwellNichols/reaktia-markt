@@ -1,0 +1,37 @@
+@import "../../../global.scss";
+
+.categories {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+
+  .title {
+    display: flex;
+    align-items: center;
+    padding: 20px 0px;
+    justify-content: space-between;
+    @include mobile {
+      padding: 0px 20px;
+    }
+    h1 {
+      color: white;
+      font-weight: 400;
+      font-size: 24px;
+    }
+    span {
+      color: white;
+      cursor: pointer;
+    }
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    grid-auto-rows: minmax(100px, auto);
+    @include mobile {
+      grid-template-columns: repeat(2, 1fr);
+
+      padding: 0px 20px;
+    }
+  }
+}

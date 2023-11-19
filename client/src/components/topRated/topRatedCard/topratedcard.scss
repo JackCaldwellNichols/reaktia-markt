@@ -1,0 +1,52 @@
+@import "../../../global.scss";
+
+.topRatedCard {
+  height: 400px;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  @include mobile {
+    width: 50%;
+  }
+  .cardImg {
+    min-height: 150px;
+    width: 80%;
+    object-fit: contain;
+  }
+  .cardBody {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    height: 100%;
+    flex-direction: column;
+    padding: 20px;
+    @include mobile {
+      width: 200px;
+    }
+    .cardBodyTop {
+      .cardRating {
+        .star {
+          color: #be3144;
+          font-size: 18px;
+        }
+      }
+    }
+    .cardTitle {
+    }
+    .cardDesc {
+      font-size: 14px;
+    }
+    .cardPrice {
+      font-size: 18px;
+      font-weight: bold;
+      color: #be3144;
+    }
+  }
+}

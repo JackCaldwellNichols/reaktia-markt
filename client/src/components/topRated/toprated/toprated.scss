@@ -1,0 +1,26 @@
+@import "../../../global.scss";
+
+.toprated {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  height: 500px;
+  padding: 50px 0px;
+  @include mobile {
+    display: none;
+  }
+  .title {
+    padding: 20px 0px;
+    @include mobile {
+      text-align: center;
+    }
+    h1 {
+      color: white;
+      font-weight: 400;
+      font-size: 24px;
+    }
+  }
+  .wrapper {
+    width: 100%;
+  }
+}
