@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import HealthCard from "../healthCard/HealthCard";
+import HealthCard from "../HealthCard/HealthCard";
 import axios from "axios";
 import "./healthandbeauty.scss";
 import { Link } from "react-router-dom";
