@@ -6,6 +6,7 @@ import Banner from "../../components/OfferBanner/Banner";
 import Phones from "../../components/phones/phones/Phones";
 import HealthAndBeauty from "../../components/health&beauty/health/HealthAndBeauty";
 import SunGlasses from "../../components/sunglasses/sunglasses/Sunglasses";
+import bg from "../../assets/bg.png";
 
 const Home = ({ open, setOpen }) => {
   return (
