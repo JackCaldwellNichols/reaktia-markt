@@ -5,14 +5,15 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  background: url("https://cdn.pixabay.com/photo/2023/06/11/09/14/ai-generated-8055525_1280.jpg");
+  background: url("https://cdn.pixabay.com/photo/2023/06/11/09/14/ai-generated-8055525_1280.jpg")
+    fixed;
   background-attachment: fixed;
   background-size: 100%;
   min-height: 100vh;
   background-repeat: no-repeat;
   @include mobile {
     background-size: auto;
-    background-position: center;
+    background-position: top;
   }
 
   .homeContainer {
