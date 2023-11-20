@@ -5,8 +5,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  background: url("https://cdn.pixabay.com/photo/2023/06/11/09/14/ai-generated-8055525_1280.jpg")
-    fixed;
+  background: url("https://cdn.pixabay.com/photo/2023/06/11/09/14/ai-generated-8055525_1280.jpg");
   background-attachment: fixed;
   background-size: 100%;
   min-height: 100vh;
@@ -14,6 +13,8 @@
   @include mobile {
     background-size: auto;
     background-position: top;
+    background-attachment: fixed;
+    background-position-y: center;
   }
 
   .homeContainer {
