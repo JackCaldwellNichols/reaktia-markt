@@ -23,7 +23,7 @@ const HealthAndBeauty = () => {
         <h1>Lighting</h1>
       </div>
       <div className="wrapper">
-        {phones.map((item) => (
+        {phones.slice(0, 4).map((item) => (
           <div key={item.id}>
             <Link className="link" to={`/product/${item.id}`}>
               <HealthCard item={item} />
